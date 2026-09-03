@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Expense Tracker.css">
+    <title>Expense Tracker</title>
+    <style>
+        .navbar{
+            margin-bottom: 32px;
+        }
+        .body{
+            margin: 0 64px;
+            
+        }
+        .recent{
+            width: 100%;
+        }
+       .last{
+        max-height: 430px;
+        overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+       
+     <div class="navbar">
+        <div class="logo">
+        <img src="icons/logoIcon.png">
+        <h1>Expense Tracker</h1>
+        </div>
+        <ul>
+        <li><a href="Expense Tracker.html" target="_self">Dashboard</a></li>
+       <li><a href="history.html" target="_self" class="active">History</a></li> 
+        
+        </ul>
+        <div class="login">
+        <div class="dark-mode"><img src="icons/moon.png" ></div>
+        <div><img src="icons/login.png"></div>
+        </div>
+    </div>
+    <div class="body">
+         <div class="recent">
+           <div class="titleRecent">
+            <h1>Transactions</h1>
+            <div class="search">  <img src="icons/search.png" >
+            <input type="text" placeholder="Search...">
+        </div>
+          
+            <div class="select">
+                <p id="all">All</p>
+                <p id="inc">Income</p>
+                <p id="exp">Expenses</p>
+            </div>
+
+           </div>
+           <div class="last">
+            
+             </div>
+             <h2 id="empty">No transaction yet</h2>
+        </div>
+        
+    </div>
+     
+        <script src="Expense Tracker.js"></script>
+</body>
+</html>

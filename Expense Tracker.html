@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Expense Tracker.css">
+    <title>Expense Tracker</title>
+</head>
+<body >
+    
+     <div class="navbar">
+        <div class="logo">
+        <img src="icons/logoIcon.png">
+        <h1>Expense Tracker</h1>
+        </div>
+        <ul>
+        <li><a href="Expense Tracker.html" target="_self" class="active">Dashboard</a></li>
+       <li><a href="history.html" target="_self">History</a></li> 
+        
+        </ul>
+        <div class="login">
+        <div class="dark-mode"><img src="icons/moon.png" ></div>
+        <div><img src="icons/login.png"></div>
+        </div>
+    </div>
+
+    <div class="counter">
+        <div class="balance" >
+        <div>
+        <h2>BALANCE</h2>
+        <img src="icons/balance.png">
+        </div>
+        <h1></h1>
+        </div>
+
+        <div class="income" >
+        <div>
+        <h2>INCOME</h2>
+        <img src="icons/income.png">
+        </div>
+        <h1></h1>
+        </div>
+
+        <div class="expen" >
+        <div>
+        <h2>EXPENSES</h2>
+        <img src="icons/expens.png">
+        </div>
+        <h1></h1>
+        </div>
+
+    </div>
+
+    <div class="transaction">
+        <div class="add">
+         <h1>Add Transaction</h1>
+        
+             <div class="title" >
+            <p>Title <span></span></p>
+            <input type="text" placeholder="e.g., Groceries" required>
+         </div>
+         
+         <div class="block" >
+            <div class="amount">
+            <p>Amount</p>
+            <span>$</span>
+            <input type="number" placeholder="0.00" required>
+         </div>
+            <div class="type" >
+            <p>Type</p>
+            <select required>
+                <option value="expense">Expense</option>
+                <option value="income">Income</option>
+            </select>
+         </div>
+        </div>
+         
+           <div class="category">
+            <p>Category</p>
+            <select required>
+                <option value="food">Food</option>
+                <option value="transport">Transport</option>
+                <option value="shopping">Shopping</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="bill">Bill</option>
+                <option value="work">Work</option>
+                <option value="other">Other</option>
+            </select>
+           </div>
+           <button>+ Add Transaction</button>
+         
+        
+     
+        
+        </div>
+
+
+
+        <div class="recent">
+           <div class="titleRecent">
+            <h1>Recent Transactions</h1>
+            <div class="search">  <img src="icons/search.png" >
+            <input type="text" placeholder="Search...">
+        </div>
+          
+            <div class="select">
+                <p id="all">All</p>
+                <p id="inc">Income</p>
+                <p id="exp">Expenses</p>
+            </div>
+
+           </div>
+           <div class="last">
+            
+             </div>
+             <h2 id="empty">No transactions yet</h2>
+             <p id="view"><a href="history.html">view all transaction</a></p>
+        </div>
+
+    </div>
+
+    
+    <script src="Expense Tracker.js"></script>
+</body>
+</html>
